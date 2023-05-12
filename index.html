@@ -22,7 +22,7 @@
 <body>
  
       <div id="content">
-          <header class="bg-white">
+          <header class="position-fixed top-0 start-0 bg-white w-100 shadow-sm" style="z-index: 3;">
            <div class="container">
             <div class="d-flex justify-content-between align-items-center  py-4">
               <a class="navbar-brand d-flex align-items-center gap-3" href="">
@@ -31,16 +31,15 @@
               </a>
 
               <nav class="navbar navbar-expand-lg pt-3" >
-                <div  class="collapse position-fixed top-0 end-0 p-6 h-100 bg-dark d-lg-block" id="navbarToggleExternalContent">
-                  <ul class="d-flex flex-column text-white text-lg-neutral-900 list-unstyled gap-5" >
-                    <li><a class="link-unstyled  " href="">Home</a></li>
-                    <li><a class="link-unstyled " href="">About Us</a></li>
-                    <li><a class="link-unstyled  " href="">Projects</a></li>
-                    <li><a class="link-unstyled  " href="">Services</a></li>
+               
+                  <ul class="d-none d-lg-flex  text-neutral-900 list-unstyled gap-5" >
+                    <li><a class="link-unstyled highlightable  " href="">Home</a></li>
+                    <li><a class="link-unstyled highlightable " href="">About Us</a></li>
+                    <li><a class="link-unstyled  highlightable " href="">Projects</a></li>
+                    <li><a class="link-unstyled highlightable  " href="">Services</a></li>
                     <li><a class="link-unstyled text-secondary " href="">Contact Us</a></li>
                 </ul>
-                </div>
-                
+
                 <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +48,47 @@
 
             </div>
            </div>
+
+           <div class="collapse pb-3" id="navbarToggleExternalContent">
+                  
+            <ul class="h-100  d-flex flex-column gap-5 list-unstyled d-lg-none h4 text-center" style="z-index: 1;" >
+        
+              <li><a class="link-unstyled highlightable  " href="">Home</a></li>
+              <li><a class="link-unstyled highlightable " href="">About Us</a></li>
+              <li><a class="link-unstyled highlightable  " href="">Projects</a></li>
+              <li><a class="link-unstyled highlightable  " href="">Services</a></li>
+              <li><a class="link-unstyled highlightable  text-secondary " href="">Contact Us</a></li>
+            </ul>
+          </div>
+
           </header>
+
+          <main>
+            <section class="heroSection position-relative">
+              <div class="container">
+                <h1 class="display-2 fw-semibold text-neutral-800 text-center text-md-start">Building things<br/> is our mission.</h1>
+              </div>
+
+              <div class=" position-absolute featureProjectsCardWrapper text-white ">
+                <div class="featureProjectsCard card text-center">
+                <div class="card-body">
+                  <h6 class="card-title">Feature Projects</h5>
+                  <p class="card-text h5">The National University of Architecture</p>
+                </div>
+              </div>
+
+              <div class="d-flex w-100">
+                <button  type="button" class="btn btn-dark w-100 no-round border-end "> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg> Back </button>
+                <button type="button" class="btn btn-dark w-100 no-round">Next <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></button>
+              </div>
+
+            </div>
+            </section>
+          </main>
       </div>
 
 

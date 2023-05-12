@@ -16725,8 +16725,24 @@ body {
   font-family: "Work Sans", sans-serif !important;
 }
 
-.higlightable {
-  transition: 1s all;
+.p-6 {
+  padding: 7rem;
+}
+
+.ms-6 {
+  margin-left: 9rem;
+}
+
+.no-round {
+  border-radius: 0;
+}
+
+.highlightable {
+  transition: 0.2s all;
+}
+.highlightable:hover {
+  color: blue !important;
+  transition: 0.2s all;
 }
 
 .link-unstyled, .link-unstyled:visited, .link-unstyled:hover, .link-unstyled:active, .link-unstyled:focus, .link-unstyled:active:hover {
@@ -16745,4 +16761,40 @@ body {
   box-shadow: inherit;
   padding: inherit;
   vertical-align: inherit;
+}
+
+.heroSection {
+  padding: 380px 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 16.58%, rgba(255, 255, 255, 0) 80.38%), url(../img/HeroBg.png);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .heroSection {
+    padding: 180px 0 300px 0;
+  }
+}
+
+.featureProjectsCardWrapper {
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 767.98px) {
+  .featureProjectsCardWrapper {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.featureProjectsCard {
+  background: #3559C7;
+  border-radius: 2px 2px 0px 0px;
+  padding: 20px 52px 0 52px;
+  max-width: 420px;
+}
+@media (max-width: 767.98px) {
+  .featureProjectsCard {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

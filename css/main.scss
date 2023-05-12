@@ -13,12 +13,12 @@ $neutral-900: #14171F;
 $neutral-400: #858EAD;
 $neutral-600: #525B7A;
 
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
-
 
 
 // Custom.scss
@@ -29,6 +29,7 @@ $neutral-600: #525B7A;
 
 // 2. Include any default variable overrides here
 
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -37,20 +38,13 @@ $neutral-600: #525B7A;
 // 4. Include any default map overrides here
 
 
-$spacers: (
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 5)
-);
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
+
+
 
 // 6. Optionally include any other parts as needed
 @import "../node_modules/bootstrap/scss/utilities";
@@ -60,6 +54,8 @@ $spacers: (
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
+
+
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
@@ -73,10 +69,29 @@ body {
     font-family: "Work Sans", sans-serif !important;
 }
 
-.higlightable {
-
-    transition: 1s all;
+.p-6 {
+  padding: $spacer * 7;
 }
+
+.ms-6 {
+  margin-left: $spacer * 9;
+}
+
+.no-round {
+  border-radius: 0 ;
+}
+
+.highlightable  {
+
+    &:hover {
+      color: blue !important;
+
+        transition: 0.2s all;
+    }
+
+    transition: 0.2s all;
+}
+
 
 .link-unstyled {
     &,
@@ -102,3 +117,41 @@ body {
       vertical-align: inherit;
     }
   }
+
+  .heroSection {
+    padding: 380px 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 16.58%, rgba(255, 255, 255, 0) 80.38%), url(../img/HeroBg.png);
+
+    background-size: cover;
+    background-position: center;
+
+    @include media-breakpoint-down(md) {
+      padding: 180px 0 300px 0;
+    }
+  }
+
+  .featureProjectsCardWrapper {
+    right: 0;
+    bottom: 0;
+
+    @include media-breakpoint-down(md) {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .featureProjectsCard {
+    background: #3559C7;
+    border-radius: 2px 2px 0px 0px; 
+    padding: 20px 52px 0 52px;
+    max-width: 420px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+  }
+
+  
+
+
