@@ -16797,4 +16797,30 @@ body {
   .featureProjectsCard {
     padding: 0;
   }
+}
+
+.reputation-section {
+  padding: 60px 30px 84px 30px;
+}
+
+.reputationList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+@media (max-width: 1199.98px) {
+  .reputationList {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.reputationCard {
+  width: 22rem;
+}
+@media (max-width: 1199.98px) {
+  .reputationCard {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
