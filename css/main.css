@@ -16733,6 +16733,26 @@ body {
   margin-left: 9rem;
 }
 
+.text-neutral-400 {
+  color: #858EAD;
+}
+
+.text-neutral-600 {
+  color: #525B7A;
+}
+
+.text-neutral-700 {
+  color: #3D445C;
+}
+
+.text-neutral-800 {
+  color: #292E3D;
+}
+
+.text-neutral-900 {
+  color: #14171F;
+}
+
 .no-round {
   border-radius: 0;
 }
@@ -16822,5 +16842,27 @@ body {
 @media (max-width: 1199.98px) {
   .reputationCard {
     width: 100%;
+  }
+}
+
+.aboutUsSection {
+  padding: 74px 0 202px 0;
+}
+@media (max-width: 991.98px) {
+  .aboutUsSection {
+    padding: 10px 0 202px 0;
+  }
+  .aboutUsSection img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutUsCard {
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    width: 380px;
+    transform: translate(0, -50%);
   }
 }/*# sourceMappingURL=main.css.map */

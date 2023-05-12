@@ -8,11 +8,7 @@
 
 $primary: #2947A9; 
 $secondary: #F9995D;
-$neutral-800: #292E3D;
-$neutral-700: #3D445C;
-$neutral-900: #14171F;
-$neutral-400: #858EAD;
-$neutral-600: #525B7A;
+
 
 
 // Include any default variable overrides here (though functions won't be available)
@@ -76,6 +72,27 @@ body {
 
 .ms-6 {
   margin-left: $spacer * 9;
+}
+
+
+.text-neutral-400 {
+  color: #858EAD;
+}
+
+.text-neutral-600 {
+  color: #525B7A;
+}
+
+.text-neutral-700 {
+  color: #3D445C;
+}
+
+.text-neutral-800 {
+  color: #292E3D;
+}
+
+.text-neutral-900 {
+  color:  #14171F;
 }
 
 
@@ -176,5 +193,28 @@ body {
 
   @include media-breakpoint-down(xl) {
     width: 100%;
+  }
+}
+
+.aboutUsSection {
+  padding: 74px 0 202px 0;
+ 
+  @include media-breakpoint-down(lg) {
+    padding: 10px 0 202px 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.aboutUsCard {
+  
+  
+  @include media-breakpoint-up(lg) {
+  position: absolute;
+  left: 55%; 
+  top: 40%;
+  width: 380px;
+  transform: translate(0, -50%);
   }
 }
