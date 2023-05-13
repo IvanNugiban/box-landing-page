@@ -11700,6 +11700,26 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
+.g-6,
+.gx-6 {
+  --bs-gutter-x: 5rem;
+}
+
+.g-6,
+.gy-6 {
+  --bs-gutter-y: 5rem;
+}
+
+.g-7,
+.gx-7 {
+  --bs-gutter-x: 7rem;
+}
+
+.g-7,
+.gy-7 {
+  --bs-gutter-y: 7rem;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -11867,6 +11887,22 @@ progress {
   .g-sm-5,
   .gy-sm-5 {
     --bs-gutter-y: 3rem;
+  }
+  .g-sm-6,
+  .gx-sm-6 {
+    --bs-gutter-x: 5rem;
+  }
+  .g-sm-6,
+  .gy-sm-6 {
+    --bs-gutter-y: 5rem;
+  }
+  .g-sm-7,
+  .gx-sm-7 {
+    --bs-gutter-x: 7rem;
+  }
+  .g-sm-7,
+  .gy-sm-7 {
+    --bs-gutter-y: 7rem;
   }
 }
 @media (min-width: 768px) {
@@ -12037,6 +12073,22 @@ progress {
   .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
+  .g-md-6,
+  .gx-md-6 {
+    --bs-gutter-x: 5rem;
+  }
+  .g-md-6,
+  .gy-md-6 {
+    --bs-gutter-y: 5rem;
+  }
+  .g-md-7,
+  .gx-md-7 {
+    --bs-gutter-x: 7rem;
+  }
+  .g-md-7,
+  .gy-md-7 {
+    --bs-gutter-y: 7rem;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -12205,6 +12257,22 @@ progress {
   .g-lg-5,
   .gy-lg-5 {
     --bs-gutter-y: 3rem;
+  }
+  .g-lg-6,
+  .gx-lg-6 {
+    --bs-gutter-x: 5rem;
+  }
+  .g-lg-6,
+  .gy-lg-6 {
+    --bs-gutter-y: 5rem;
+  }
+  .g-lg-7,
+  .gx-lg-7 {
+    --bs-gutter-x: 7rem;
+  }
+  .g-lg-7,
+  .gy-lg-7 {
+    --bs-gutter-y: 7rem;
   }
 }
 @media (min-width: 1200px) {
@@ -12375,6 +12443,22 @@ progress {
   .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
+  .g-xl-6,
+  .gx-xl-6 {
+    --bs-gutter-x: 5rem;
+  }
+  .g-xl-6,
+  .gy-xl-6 {
+    --bs-gutter-y: 5rem;
+  }
+  .g-xl-7,
+  .gx-xl-7 {
+    --bs-gutter-x: 7rem;
+  }
+  .g-xl-7,
+  .gy-xl-7 {
+    --bs-gutter-y: 7rem;
+  }
 }
 @media (min-width: 1400px) {
   .col-xxl {
@@ -12543,6 +12627,22 @@ progress {
   .g-xxl-5,
   .gy-xxl-5 {
     --bs-gutter-y: 3rem;
+  }
+  .g-xxl-6,
+  .gx-xxl-6 {
+    --bs-gutter-x: 5rem;
+  }
+  .g-xxl-6,
+  .gy-xxl-6 {
+    --bs-gutter-y: 5rem;
+  }
+  .g-xxl-7,
+  .gx-xxl-7 {
+    --bs-gutter-x: 7rem;
+  }
+  .g-xxl-7,
+  .gy-xxl-7 {
+    --bs-gutter-y: 7rem;
   }
 }
 .clearfix::after {
@@ -16850,7 +16950,7 @@ body {
 }
 @media (max-width: 991.98px) {
   .aboutUsSection {
-    padding: 10px 0 202px 0;
+    padding: 10px 0 50px 0;
   }
   .aboutUsSection img {
     width: 100%;
@@ -16865,4 +16965,9 @@ body {
     width: 380px;
     transform: translate(0, -50%);
   }
+}
+
+.servicesSection {
+  padding: 45px 0 75px 0;
+  background: #F6F8F7;
 }/*# sourceMappingURL=main.css.map */

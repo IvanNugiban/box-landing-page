@@ -11,12 +11,23 @@ $secondary: #F9995D;
 
 
 
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 7
+);
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -73,6 +84,7 @@ body {
 .ms-6 {
   margin-left: $spacer * 9;
 }
+
 
 
 .text-neutral-400 {
@@ -200,7 +212,7 @@ body {
   padding: 74px 0 202px 0;
  
   @include media-breakpoint-down(lg) {
-    padding: 10px 0 202px 0;
+    padding: 10px 0 50px 0;
     img {
       width: 100%;
     }
@@ -217,4 +229,9 @@ body {
   width: 380px;
   transform: translate(0, -50%);
   }
+}
+
+.servicesSection {
+  padding: 45px 0 75px 0;
+  background: #F6F8F7;
 }
