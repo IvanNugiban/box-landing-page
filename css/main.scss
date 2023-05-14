@@ -91,6 +91,10 @@ body {
   color: #858EAD;
 }
 
+.text-neutral-500 {
+  color: #667299;
+}
+
 .text-neutral-600 {
   color: #525B7A;
 }
@@ -209,7 +213,7 @@ body {
 }
 
 .aboutUsSection {
-  padding: 74px 0 202px 0;
+  padding: 74px 0 100px 0;
  
   @include media-breakpoint-down(lg) {
     padding: 10px 0 50px 0;
@@ -234,4 +238,92 @@ body {
 .servicesSection {
   padding: 45px 0 75px 0;
   background: #F6F8F7;
+}
+
+.experineceSection {
+  padding: 103px 0 260px 0;
+
+  @include media-breakpoint-down(xl) {
+    padding: 30px 0 30px 0;
+  }
+}
+
+.experienceSectionContainer {
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+}
+
+.experienceCardWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  gap: 20px;
+
+   @include media-breakpoint-up(xl) {
+    flex: 0 0 60%; 
+    margin-right: 152px;
+    gap: 0;
+    margin-top: 0;
+  }
+ }
+
+.experienceCard {
+  
+ @include media-breakpoint-down(xl) {
+  left: 0 !important;
+  }
+
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    min-width: 50%;
+  }
+}
+
+
+.experienceImgLeft {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.experienceImgRight {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.experienceImgBottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.experienceImgLeft,
+ .experienceImgRight,
+ .experienceImgBottom{
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+  
+
+  @include media-breakpoint-down(sm) {
+    transform: translate(0);
+  }
+  
+
+  @include media-breakpoint-up(sm) {
+    width: 70px;
+  }
+  
+  @include media-breakpoint-up(xl) {
+    width: 100px;
+  }
 }
