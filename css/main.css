@@ -17046,7 +17046,7 @@ body {
 .experienceImgRight,
 .experienceImgBottom {
   position: absolute;
-  width: 50px;
+  width: 40px;
   z-index: 2;
 }
 @media (max-width: 575.98px) {
@@ -17069,4 +17069,11 @@ body {
   .experienceImgBottom {
     width: 100px;
   }
+}
+
+.consultationSection {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/ConsultationBackground.png");
 }/*# sourceMappingURL=main.css.map */

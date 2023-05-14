@@ -310,7 +310,7 @@ body {
  .experienceImgRight,
  .experienceImgBottom{
   position: absolute;
-  width: 50px;
+  width: 40px;
   z-index: 2;
   
 
@@ -326,4 +326,11 @@ body {
   @include media-breakpoint-up(xl) {
     width: 100px;
   }
+}
+
+.consultationSection {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/ConsultationBackground.png");
 }
