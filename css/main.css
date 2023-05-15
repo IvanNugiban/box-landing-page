@@ -17103,4 +17103,18 @@ body {
   height: 16px;
   background-color: #F6F8F7;
   border-radius: 50%;
+}
+
+.contactsSection {
+  padding: 60px 0px 77px 0px;
+  background-color: #F6F8F7;
+}
+.contactsSection .star {
+  color: red;
+}
+.contactsSection .sumbitButton {
+  padding: 16px 100px;
+}
+.contactsSection .contactsWrapper {
+  max-width: 600px;
 }/*# sourceMappingURL=main.css.map */
