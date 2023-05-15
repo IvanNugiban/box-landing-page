@@ -85,7 +85,9 @@ body {
   margin-left: $spacer * 9;
 }
 
-
+.text-neutral-200 {
+  color: #C2C7D6;
+}
 
 .text-neutral-400 {
   color: #858EAD;
@@ -244,7 +246,7 @@ body {
   padding: 103px 0 260px 0;
 
   @include media-breakpoint-down(xl) {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 50px 0;
   }
 }
 
@@ -333,4 +335,27 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url("../img/ConsultationBackground.png");
+}
+
+.projectsSection {
+  padding: 88px 0 137px 0;
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0 50px 0;
+  }
+ 
+  .projectCard {
+    max-width: 330px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
+
+  .projectsCarouselCircle {
+    width: 16px;
+    height: 16px;
+    background-color: #F6F8F7;
+    border-radius: 50%;
+  }
 }
